@@ -1,0 +1,18 @@
+# Ignore scraped output
+productData.json
+
+# Ignore input URLs list (in case it’s sensitive)
+inputURLS.txt
+
+# Ignore screenshots or large media
+screenshot.png
+
+# Node modules (if applicable)
+node_modules/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
