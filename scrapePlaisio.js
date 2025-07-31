@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 (async () => {
-    const inputdata = fs.readFileSync("inputURLS.txt" , { encoding: 'utf8', flag: 'r' });
+    const inputdata = fs.readFileSync("data/inputURLS.txt" , { encoding: 'utf8', flag: 'r' });
     const urls = inputdata.split('\n');
     // console.log(explodedInputData)
 
@@ -69,7 +69,7 @@ const fs = require('fs');
         // console.log('Τα δεδομένα αποθηκεύτηκαν στο productData.json');        
     }
     console.log(scrapedData);
-    fs.writeFileSync('productData.json', JSON.stringify(scrapedData), 'utf-8');
+    fs.writeFileSync('data/productData.json', JSON.stringify(scrapedData), 'utf-8');
     // const url = 'https://www.plaisio.gr/xartopoleio/promitheies-grafeiou/post-it-xartakia/work-autokollita-xartakia-neon-75x75mm-400filla_2049392';
 
 
